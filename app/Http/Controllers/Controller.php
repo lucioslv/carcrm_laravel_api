@@ -18,7 +18,7 @@ class Controller extends BaseController
 
     public function error($msg = 'Erro.', $time = 1200)
     {
-        return response()->json(['status' => 400, 'error' => $msg, 'time' => $time], 200);
+        return response()->json(['status' => 400, 'error' => $msg, 'time' => $time], 400);
     }
 
     public function validateUrl($string)
